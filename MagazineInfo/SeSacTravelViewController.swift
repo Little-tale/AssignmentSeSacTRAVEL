@@ -14,8 +14,8 @@ class SeSacTravelViewController: UINavigationController {
         super.viewDidLoad()
         //print(navItemBar.titleTextAttributes)
         navItemBar.barTintColor = .none
-//        navItemBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: , size: <#T##CGFloat#>)
-        
+//        navItemBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name:"SystemBold" , size: 50)
+//        
         
     }
     

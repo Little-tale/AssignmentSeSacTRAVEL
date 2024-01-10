@@ -4,6 +4,7 @@ import Kingfisher
 // 다른 파일에서 가져오기
 var magazineList = MagazineInfo()
 
+
 class SeSacTrableTableViewController: UITableViewController {
     //@IBOutlet var headerTextLabel: UILabel!
     
@@ -19,7 +20,7 @@ class SeSacTrableTableViewController: UITableViewController {
     }
     func designHeaderTextLabel() {
         navItem.title = "SeSac TRAVEL"
-        //headerTextLabel.font = .boldSystemFont(ofSize: 20)
+       
     }
 
     // MARK: - 섹션이 몇개인가?
@@ -57,17 +58,15 @@ class SeSacTrableTableViewController: UITableViewController {
         
         
         // main 텍스트
-        setMainTitle(uiLabel: cell.infoMainLabel)
-        cell.infoMainLabel.text = magazineList.magazine[row].title
+        setTitleOfMagazine.main.titleStyles(uiLabel: cell.infoMainLabel,text: magazineList.magazine[row].title)
         
         // sub 텍스트
-        setSubTitle(uiLabel: cell.infoSubLabel)
-        cell.infoSubLabel.text = magazineList.magazine[row].subtitle
+        setTitleOfMagazine.sub.titleStyles(uiLabel: cell.infoSubLabel, text: magazineList.magazine[row].subtitle)
         
         // 날짜
-        setDateTitle(uiLabel: cell.infoDateLabel,  date:
-                        getDate(date: magazineList.magazine[row].date))
-        print("날짜: ",magazineList.magazine[row].date)
+        let date = getDate(date: magazineList.magazine[row].date)
+        print(date)
+        setTitleOfMagazine.Date.titleStyles(uiLabel: cell.infoDateLabel, text: date)
         
         // 셀 밑줄 제거
         return cell
@@ -77,26 +76,7 @@ class SeSacTrableTableViewController: UITableViewController {
         uiV.contentMode = .scaleAspectFill
         uiV.layer.cornerRadius = 12
     }
-    func setMainTitle( uiLabel:UILabel){
-        uiLabel.numberOfLines = 2
-        uiLabel.textAlignment = .left
-        uiLabel.font = .systemFont(ofSize: 24, weight: .heavy)
-    }
     
-    func setSubTitle( uiLabel: UILabel) {
-        uiLabel.numberOfLines = 1
-        uiLabel.textAlignment = .left
-        uiLabel.font = .systemFont(ofSize: 15, weight: .bold)
-        uiLabel.textColor = .systemGray
-    }
-    
-    func setDateTitle( uiLabel: UILabel, date: String) {
-        print(date)
-        uiLabel.text = date
-        uiLabel.textAlignment = .right
-        uiLabel.font = .systemFont(ofSize: 14, weight: .semibold)
-        uiLabel.textColor = .systemGray2
-    }
     func getDate(date: String) -> String {
         let dateFormmerter = DateFormatter()
         dateFormmerter.dateFormat = "yyMMdd"
@@ -110,3 +90,4 @@ class SeSacTrableTableViewController: UITableViewController {
         }
     }
 }
+

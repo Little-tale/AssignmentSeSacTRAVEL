@@ -19,6 +19,7 @@
 		7B0E2AD02B4C038000E6C038 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0E2ACF2B4C038000E6C038 /* Kingfisher */; };
 		7B0E2AD22B4C16F400E6C038 /* SeSacTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2AD12B4C16F400E6C038 /* SeSacTravelViewController.swift */; };
 		7B0E2AD42B4C174F00E6C038 /* SeSacUINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2AD32B4C174F00E6C038 /* SeSacUINavigationItem.swift */; };
+		7B0E2B4F2B4EF6AE00E6C038 /* SeSacTrableStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7B0E2ACC2B4BFE3300E6C038 /* MagazineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineInfo.swift; sourceTree = "<group>"; };
 		7B0E2AD12B4C16F400E6C038 /* SeSacTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacTravelViewController.swift; sourceTree = "<group>"; };
 		7B0E2AD32B4C174F00E6C038 /* SeSacUINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacUINavigationItem.swift; sourceTree = "<group>"; };
+		7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacTrableStructs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7B0E2ACA2B4BFD2500E6C038 /* SeSacTravelTableViewCell.swift */,
 				7B0E2AD12B4C16F400E6C038 /* SeSacTravelViewController.swift */,
 				7B0E2AD32B4C174F00E6C038 /* SeSacUINavigationItem.swift */,
+				7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */,
 			);
 			path = MagazineInfo;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				7B0E2AB92B4BFC1500E6C038 /* ViewController.swift in Sources */,
 				7B0E2AB52B4BFC1500E6C038 /* AppDelegate.swift in Sources */,
 				7B0E2AD42B4C174F00E6C038 /* SeSacUINavigationItem.swift in Sources */,
+				7B0E2B4F2B4EF6AE00E6C038 /* SeSacTrableStructs.swift in Sources */,
 				7B0E2AB72B4BFC1500E6C038 /* SceneDelegate.swift in Sources */,
 				7B0E2AD22B4C16F400E6C038 /* SeSacTravelViewController.swift in Sources */,
 				7B0E2ACB2B4BFD2500E6C038 /* SeSacTravelTableViewCell.swift in Sources */,
