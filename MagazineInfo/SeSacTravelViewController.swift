@@ -12,11 +12,9 @@ class SeSacTravelViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print(navItemBar.titleTextAttributes)
+
         navItemBar.barTintColor = .none
-//        navItemBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name:"SystemBold" , size: 50)
-//        
-        
+
     }
     
 

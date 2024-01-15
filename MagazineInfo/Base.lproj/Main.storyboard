@@ -96,7 +96,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kasdlkjsalkdadadjajdalsj;as;sd;asjdasjdjas;dj;dj;adj;ajd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQv-gF-cto">
-                                            <rect key="frame" x="31.999999999999986" y="369" width="235.66666666666663" height="60"/>
+                                            <rect key="frame" x="31.999999999999986" y="369" width="235.66666666666663" height="59"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="j7P-nG-aOu"/>
                                             </constraints>
@@ -105,7 +105,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXl-S9-E0Z">
-                                            <rect key="frame" x="32" y="437" width="186.33333333333334" height="20"/>
+                                            <rect key="frame" x="32" y="436" width="186.33333333333334" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Rg7-p4-bHb"/>
                                             </constraints>
@@ -130,6 +130,7 @@
                                         <constraint firstItem="TXl-S9-E0Z" firstAttribute="top" secondItem="pQv-gF-cto" secondAttribute="bottom" constant="8" id="HNY-Fn-Awe"/>
                                         <constraint firstItem="TXl-S9-E0Z" firstAttribute="leading" secondItem="pQv-gF-cto" secondAttribute="leading" id="Jkj-Fw-gNM"/>
                                         <constraint firstItem="TXl-S9-E0Z" firstAttribute="width" secondItem="pQv-gF-cto" secondAttribute="width" multiplier="0.790698" id="RbN-tK-a4P"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TXl-S9-E0Z" secondAttribute="bottom" constant="20" id="XTv-Y5-Lui"/>
                                         <constraint firstItem="pQv-gF-cto" firstAttribute="top" secondItem="nno-HN-gin" secondAttribute="bottom" constant="20" id="XZI-np-dav"/>
                                         <constraint firstItem="Buy-ZM-P1A" firstAttribute="top" secondItem="nno-HN-gin" secondAttribute="bottom" constant="108" id="fDv-dk-m3H"/>
                                         <constraint firstItem="pQv-gF-cto" firstAttribute="leading" secondItem="nno-HN-gin" secondAttribute="leading" id="lQI-Rx-LaM"/>

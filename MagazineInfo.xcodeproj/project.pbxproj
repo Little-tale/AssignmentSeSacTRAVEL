@@ -23,6 +23,7 @@
 		7B18E8102B54F0DF00480759 /* WebViewStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B18E80F2B54F0DF00480759 /* WebViewStoryBoard.storyboard */; };
 		7B18E8122B54F0F600480759 /* IdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18E8112B54F0F600480759 /* IdentifierProtocol.swift */; };
 		7B18E8142B54F1FF00480759 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18E8132B54F1FF00480759 /* WebViewController.swift */; };
+		7B18E83C2B556FDD00480759 /* DataLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18E83B2B556FDD00480759 /* DataLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		7B18E80F2B54F0DF00480759 /* WebViewStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryBoard.storyboard; sourceTree = "<group>"; };
 		7B18E8112B54F0F600480759 /* IdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierProtocol.swift; sourceTree = "<group>"; };
 		7B18E8132B54F1FF00480759 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7B18E83B2B556FDD00480759 /* DataLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		7B0E2AB32B4BFC1500E6C038 /* MagazineInfo */ = {
 			isa = PBXGroup;
 			children = (
+				7B18E83A2B556FC300480759 /* DataLogic */,
 				7B18E80E2B54F09F00480759 /* WebVIwPlactice */,
 				7B0E2ACC2B4BFE3300E6C038 /* MagazineInfo.swift */,
 				7B0E2AB42B4BFC1500E6C038 /* AppDelegate.swift */,
@@ -102,6 +105,14 @@
 				7B18E8132B54F1FF00480759 /* WebViewController.swift */,
 			);
 			path = WebVIwPlactice;
+			sourceTree = "<group>";
+		};
+		7B18E83A2B556FC300480759 /* DataLogic */ = {
+			isa = PBXGroup;
+			children = (
+				7B18E83B2B556FDD00480759 /* DataLogic.swift */,
+			);
+			path = DataLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			files = (
 				7B0E2AB92B4BFC1500E6C038 /* ViewController.swift in Sources */,
 				7B18E8142B54F1FF00480759 /* WebViewController.swift in Sources */,
+				7B18E83C2B556FDD00480759 /* DataLogic.swift in Sources */,
 				7B0E2AB52B4BFC1500E6C038 /* AppDelegate.swift in Sources */,
 				7B0E2AD42B4C174F00E6C038 /* SeSacUINavigationItem.swift in Sources */,
 				7B0E2B4F2B4EF6AE00E6C038 /* SeSacTrableStructs.swift in Sources */,

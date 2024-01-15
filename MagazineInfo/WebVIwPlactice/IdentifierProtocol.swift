@@ -20,14 +20,9 @@ extension UITableViewCell {
     }
 }
 
-//extension WebViewController {
-//    static var identifier: String {
-//        return String(describing: self)
-//    }
-//}
-
-extension NSObject {
-    static var storyBoard: String {
-        return String(describing: self)
-    }
+enum StoryBoardName: String {
+    case WebViewCotroller = "WebViewStoryBoard"
+    
+   
 }
+
