@@ -20,6 +20,9 @@
 		7B0E2AD22B4C16F400E6C038 /* SeSacTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2AD12B4C16F400E6C038 /* SeSacTravelViewController.swift */; };
 		7B0E2AD42B4C174F00E6C038 /* SeSacUINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2AD32B4C174F00E6C038 /* SeSacUINavigationItem.swift */; };
 		7B0E2B4F2B4EF6AE00E6C038 /* SeSacTrableStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */; };
+		7B18E8102B54F0DF00480759 /* WebViewStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B18E80F2B54F0DF00480759 /* WebViewStoryBoard.storyboard */; };
+		7B18E8122B54F0F600480759 /* IdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18E8112B54F0F600480759 /* IdentifierProtocol.swift */; };
+		7B18E8142B54F1FF00480759 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18E8132B54F1FF00480759 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7B0E2AD12B4C16F400E6C038 /* SeSacTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacTravelViewController.swift; sourceTree = "<group>"; };
 		7B0E2AD32B4C174F00E6C038 /* SeSacUINavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacUINavigationItem.swift; sourceTree = "<group>"; };
 		7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSacTrableStructs.swift; sourceTree = "<group>"; };
+		7B18E80F2B54F0DF00480759 /* WebViewStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewStoryBoard.storyboard; sourceTree = "<group>"; };
+		7B18E8112B54F0F600480759 /* IdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierProtocol.swift; sourceTree = "<group>"; };
+		7B18E8132B54F1FF00480759 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		7B0E2AB32B4BFC1500E6C038 /* MagazineInfo */ = {
 			isa = PBXGroup;
 			children = (
+				7B18E80E2B54F09F00480759 /* WebVIwPlactice */,
 				7B0E2ACC2B4BFE3300E6C038 /* MagazineInfo.swift */,
 				7B0E2AB42B4BFC1500E6C038 /* AppDelegate.swift */,
 				7B0E2AB62B4BFC1500E6C038 /* SceneDelegate.swift */,
@@ -85,6 +92,16 @@
 				7B0E2B4E2B4EF6AE00E6C038 /* SeSacTrableStructs.swift */,
 			);
 			path = MagazineInfo;
+			sourceTree = "<group>";
+		};
+		7B18E80E2B54F09F00480759 /* WebVIwPlactice */ = {
+			isa = PBXGroup;
+			children = (
+				7B18E80F2B54F0DF00480759 /* WebViewStoryBoard.storyboard */,
+				7B18E8112B54F0F600480759 /* IdentifierProtocol.swift */,
+				7B18E8132B54F1FF00480759 /* WebViewController.swift */,
+			);
+			path = WebVIwPlactice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E2AC12B4BFC1700E6C038 /* LaunchScreen.storyboard in Resources */,
+				7B18E8102B54F0DF00480759 /* WebViewStoryBoard.storyboard in Resources */,
 				7B0E2ABE2B4BFC1700E6C038 /* Assets.xcassets in Resources */,
 				7B0E2ABC2B4BFC1500E6C038 /* Main.storyboard in Resources */,
 			);
@@ -165,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0E2AB92B4BFC1500E6C038 /* ViewController.swift in Sources */,
+				7B18E8142B54F1FF00480759 /* WebViewController.swift in Sources */,
 				7B0E2AB52B4BFC1500E6C038 /* AppDelegate.swift in Sources */,
 				7B0E2AD42B4C174F00E6C038 /* SeSacUINavigationItem.swift in Sources */,
 				7B0E2B4F2B4EF6AE00E6C038 /* SeSacTrableStructs.swift in Sources */,
@@ -173,6 +192,7 @@
 				7B0E2ACB2B4BFD2500E6C038 /* SeSacTravelTableViewCell.swift in Sources */,
 				7B0E2AC92B4BFD0F00E6C038 /* SeSacTrableTableViewController.swift in Sources */,
 				7B0E2ACD2B4BFE3300E6C038 /* MagazineInfo.swift in Sources */,
+				7B18E8122B54F0F600480759 /* IdentifierProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

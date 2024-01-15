@@ -3,7 +3,7 @@ import Kingfisher
 // MARK: - magazineList
 // 다른 파일에서 가져오기
 var magazineList = MagazineInfo()
-
+var magazines = MagazineInfo().magazine
 
 class SeSacTrableTableViewController: UITableViewController {
     //@IBOutlet var headerTextLabel: UILabel!
@@ -17,21 +17,33 @@ class SeSacTrableTableViewController: UITableViewController {
         print(magazineList.magazine[0].title)
         designHeaderTextLabel()
         tableView.separatorStyle = .none
+        
+        let rightButton = UIBarButtonItem(title: "테스트", style: .plain, target: self, action: #selector(testNext))
+        
+        navigationItem.rightBarButtonItem = rightButton
     }
+    
+    @objc func testNext() {
+        let sb = UIStoryboard(name: "WebViewStoryBoard", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier:   "WebViewController") as! WebViewController
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     func designHeaderTextLabel() {
         navItem.title = "SeSac TRAVEL"
-       
+        
     }
-
+    
     // MARK: - 섹션이 몇개인가?
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
-
+    
     // MARK: - 셀이 몇개인가?
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      
+        
         return magazineList.magazine.count
     }
     
@@ -72,6 +84,20 @@ class SeSacTrableTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("보내기전 : ",magazines[indexPath.row].link)
+        
+        let sb = UIStoryboard(name: "WebViewStoryBoard", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier:   "WebViewController") as! WebViewController
+        
+        vc.tempLink = magazines[indexPath.row].link
+        navigationController?.pushViewController(vc, animated: true)
+        
+        print(indexPath.row)
+    }
+    
+    
     func setImgView( uiV: UIImageView) {
         uiV.contentMode = .scaleAspectFill
         uiV.layer.cornerRadius = 12
@@ -89,5 +115,11 @@ class SeSacTrableTableViewController: UITableViewController {
             return "날짜 읽기 실패"
         }
     }
+    
+    
+    
 }
 
+extension SeSacTravelViewController {
+    
+}
