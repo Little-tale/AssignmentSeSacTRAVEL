@@ -13,3 +13,21 @@ extension UIViewController {
         return String(describing: self)
     }
 }
+
+extension UITableViewCell {
+    static var Identifier: String {
+        return String(describing: self)
+    }
+}
+
+//extension WebViewController {
+//    static var identifier: String {
+//        return String(describing: self)
+//    }
+//}
+
+extension NSObject {
+    static var storyBoard: String {
+        return String(describing: self)
+    }
+}

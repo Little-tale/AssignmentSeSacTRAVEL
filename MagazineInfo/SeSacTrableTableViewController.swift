@@ -25,7 +25,7 @@ class SeSacTrableTableViewController: UITableViewController {
     
     @objc func testNext() {
         let sb = UIStoryboard(name: "WebViewStoryBoard", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier:   "WebViewController") as! WebViewController
+        let vc = sb.instantiateViewController(withIdentifier:   WebViewController.Identifier) as! WebViewController
         navigationController?.pushViewController(vc, animated: true)
         
     }
@@ -60,7 +60,7 @@ class SeSacTrableTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = indexPath.row
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SeSacTravelTableViewCell", for: indexPath) as! SeSacTravelTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SeSacTravelTableViewCell.Identifier, for: indexPath) as! SeSacTravelTableViewCell
         
         setImgView(uiV: cell.infoImageView)
         
@@ -89,7 +89,7 @@ class SeSacTrableTableViewController: UITableViewController {
         print("보내기전 : ",magazines[indexPath.row].link)
         
         let sb = UIStoryboard(name: "WebViewStoryBoard", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier:   "WebViewController") as! WebViewController
+        let vc = sb.instantiateViewController(withIdentifier:   WebViewController.Identifier) as! WebViewController
         
         vc.tempLink = magazines[indexPath.row].link
         navigationController?.pushViewController(vc, animated: true)

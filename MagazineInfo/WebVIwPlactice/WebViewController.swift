@@ -15,7 +15,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // <#T##request: URLRequest##URLRequest#>
-        
+        print("받은후 : -> ",tempLink)
         if let url = URL(string: tempLink) {
             let urlRequest = URLRequest(url: url)
             webView.load(urlRequest)
